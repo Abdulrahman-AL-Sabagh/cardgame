@@ -1,0 +1,26 @@
+.bubbles {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    z-index: -1;
+    transform: translateZ(0);
+}
+
+.bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    bottom: -100px;
+    animation: square 8s 1 ease-in-out;
+}
+
+@keyframes square {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1080px) rotate(630deg);
+    }
+}
